@@ -51,7 +51,6 @@ if __name__ == '__main__':
     
     # mean = 0, variance = 1
     x = np.linspace(-5, 5, 1000)
-    
     # plot samples
     plt.hist(samples, bins=20, density=True, label='samples')
     
@@ -77,11 +76,6 @@ if __name__ == '__main__':
 
     # mean = 0, variance = 1
     x = np.linspace(-5, 11, 1000)
-
-    # adding noise to samples will make the student t-distribution more similar to the gaussian distribution.
-    # this is because the student t-distribution is more robust to outliers than the gaussian distribution.
-    # More similar in this case means that the student t-distribution will have a higher probability density at the same point. 
-    # This is because the student t-distribution has a heavier tail than the gaussian distribution.
 
     # plot samples
     plt.hist(samples_2, bins=20, density=True, label='samples')
